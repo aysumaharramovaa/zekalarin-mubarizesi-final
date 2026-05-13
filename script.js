@@ -50,25 +50,26 @@ const questionsData = {
   RİYAZİYYAT: {
     "3 bal": {
       sual: `Üç dostun — Araz, Babək və Cavidin müvafiq olaraq 12, 15 və 20  sikkəsi var (cəmi 47 sikkə). Onlar stolüstü bir oyun oynayırlar. Oyunun sadə bir qaydası var: Hər gedişdə ixtiyari iki dost öz sikkələrindən 1 dənəsini götürüb (cəmi 2 sikkə) üçüncü dosta verirlər. Oyunun məqsədi bütün 47 sikkəni yalnız bir dostda toplamaq və digər iki dostun əlində heç nə saxlamamaqdır. Buna nail olmaq üçün dostlar ən azı neçə gediş etməlidirlər?`,
-      cavab: "",
+      cavab: "15",
     },
     "4 bal": {
       sual: `Məşhur bir restoranın baş aşpazı böyük, tam dairəvi bir pizzanı kəsmək üçün xüsusi uzun bıçaqdan istifadə edir. O, pizzani kəsərkən bıçağı yalnız düz xətt boyunca hərəkət etdirir. Aşpaz pizzani tam olaraq 5 dəfə düz kəsməklə onu maksimum neçə fərqli hissəyə (hissələrin bərabər olması şərt deyil) bölə bilər?`,
       cavab: "16",
     },
     "5 bal": {
-      foto: "Files/mach5.png",
+      foto: "Files/mach5 .png",
       sual: ` Şəkildə ucları bir-birinə birləşdirilmiş iki mavi və üç qırmızı kibrit çöpü göstərilib. Eyni rəngdə olan kibritlərin yanıb qurtarma vaxtları bərabərdir.
 Yanan kibrit birləşmə nöqtəsinə çatdıqda toxunduğu digər kibritləri də yandırır.
 Kibritləri K ucundan yandırdığımız andan 10,6 saniyə sonra A kibriti, 17,8 saniyə sonra isə B kibriti yanıb qurtarır. Buna əsasən, C kibriti neçə saniyədən sonra yanıb qurtaracaq?
-
 `,
       cavab: "14",
     },
     "6 bal": {
       sual: `Çox gizli bir kibertəhlükəsizlik mərkəzində yeni server şəbəkəsi qurulur. Sistemin çökməməsi üçün iki çox sərt fiziki qayda təyin olunub:
-1.	Hər bir server xüsusi kabellə tam olaraq 3 başqa serverə birbaşa bağlanmalıdır (nə az, nə çox).
-2.	Məlumatın qapalı dövrədə (loop) ilişib qalmaması üçün heç bir halda 3 server öz aralarında "üçbucaq" yarada bilməz (Yəni, A serveri B-yə, B serveri C-yə, C də yenidən A-ya birbaşa bağlanıbsa, bu qadağandır). Sistem bu iki qaydanı pozmadan tam işlək vəziyyətə gətirilib. Bu şəbəkədə ola biləcək serverlərin (aparatların) sayı ən azı neçə ola bilər?
+1.	Hər bir server xüsusi kabellə tam olaraq 3 başqa serverə 
+birbaşa bağlanmalıdır (nə az, nə çox).
+2.	Məlumatın qapalı dövrədə (loop) ilişib qalmaması üçün heç bir halda 3 server öz aralarında "üçbucaq" yarada bilməz (Yəni, A serveri B-yə, B serveri C-yə, C də yenidən A-ya birbaşa bağlanıbsa, bu qadağandır). Sistem bu iki qaydanı pozmadan tam işlək vəziyyətə gətirilib. Bu şəbəkədə ola biləcək serverlərin (aparatların) 
+sayı ən azı neçə ola bilər?
 `,
       cavab: "6",
     },
@@ -184,6 +185,7 @@ const answerTextDiv = document.getElementById("answerText");
 const showAnswerBtn = document.getElementById("showAnswerBtn");
 const closeBoxBtn = document.getElementById("closeBoxBtn");
 const timerDisplay = document.getElementById("timer");
+const questionImage = document.getElementById("questionImage");
 
 let selectedButton = null;
 let timerInterval = null;
@@ -220,6 +222,13 @@ function startQuestion(cat, label, time) {
     questionTextDiv.style.fontSize = "1.5rem";
   } else {
     questionTextDiv.style.fontSize = "";
+  }
+
+  if (data.foto) {
+    questionImage.src = data.foto;
+    questionImage.classList.remove("hidden");
+  } else {
+    questionImage.classList.add("hidden");
   }
 
   answerTextDiv.classList.add("hidden");
