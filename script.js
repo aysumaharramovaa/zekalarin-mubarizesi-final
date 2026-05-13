@@ -192,9 +192,6 @@ let timerInterval = null;
 const audioTicker1 = new Audio("Files/ticker1.mp3");
 const audioTicker2 = new Audio("Files/ticker2.mp3");
 
-/* =========================
-   🔧 FIX: TIMER STOP FUNKSIYA
-========================= */
 function stopTimerSounds() {
   clearInterval(timerInterval);
   timerInterval = null;
@@ -206,7 +203,6 @@ function stopTimerSounds() {
   audioTicker2.currentTime = 0;
 }
 
-/* ========================= */
 
 Object.entries(categories).forEach(([title, { questions }]) => {
   const div = document.createElement("div");
@@ -223,7 +219,6 @@ Object.entries(categories).forEach(([title, { questions }]) => {
 
       selectedButton = btn;
 
-      // 🔧 FIX: əvvəlki hər şeyi bağla
       stopTimerSounds();
 
       startQuestion(title, label, time);
@@ -265,14 +260,14 @@ function startQuestion(cat, label, time) {
   selectedButton.classList.add("active-q");
 
   runConfetti();
-
-  // 🔧 FIX: timer reset
   timerDisplay.innerText = `${Math.floor(time / 60)}:00`;
 
   startTimer(time);
 }
 
 function revealAnswer() {
+  stopTimerSounds(); 
+
   answerTextDiv.classList.remove("hidden");
   showAnswerBtn.classList.add("hidden");
   closeBoxBtn.classList.remove("hidden");
@@ -280,14 +275,11 @@ function revealAnswer() {
 
 showAnswerBtn.onclick = revealAnswer;
 
-/* =========================
-   🔧 FIX: CLOSE BOX FULL RESET
-========================= */
 closeBoxBtn.onclick = () => {
   questionBox.classList.add("hidden");
   timerDisplay.classList.add("hidden");
 
-  stopTimerSounds(); // 👈 ən vacib fix
+  stopTimerSounds(); 
 
   if (selectedButton) {
     selectedButton.style.visibility = "hidden";
@@ -296,8 +288,7 @@ closeBoxBtn.onclick = () => {
 };
 
 function startTimer(duration) {
-  stopTimerSounds(); // 🔥 double safety (overlap olmaması üçün)
-
+  stopTimerSounds(); 
   let time = duration;
 
   audioTicker1.currentTime = 0;
