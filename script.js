@@ -177,7 +177,6 @@ Söhbət hansı əsərdən gedir və bu əsər kim tərəfindən qələmə alın
     },
   },
 };
-
 const categoryContainer = document.getElementById("categoryContainer");
 const questionBox = document.getElementById("questionBox");
 const questionTextDiv = document.getElementById("questionText");
@@ -189,8 +188,25 @@ const questionImage = document.getElementById("questionImage");
 
 let selectedButton = null;
 let timerInterval = null;
+
 const audioTicker1 = new Audio("Files/ticker1.mp3");
 const audioTicker2 = new Audio("Files/ticker2.mp3");
+
+/* =========================
+   🔧 FIX: TIMER STOP FUNKSIYA
+========================= */
+function stopTimerSounds() {
+  clearInterval(timerInterval);
+  timerInterval = null;
+
+  audioTicker1.pause();
+  audioTicker2.pause();
+
+  audioTicker1.currentTime = 0;
+  audioTicker2.currentTime = 0;
+}
+
+/* ========================= */
 
 Object.entries(categories).forEach(([title, { questions }]) => {
   const div = document.createElement("div");
@@ -201,13 +217,21 @@ Object.entries(categories).forEach(([title, { questions }]) => {
     const btn = document.createElement("button");
     btn.className = "q-button";
     btn.innerText = label;
+
     btn.onclick = () => {
       if (btn.classList.contains("done")) return;
+
       selectedButton = btn;
+
+      // 🔧 FIX: əvvəlki hər şeyi bağla
+      stopTimerSounds();
+
       startQuestion(title, label, time);
     };
+
     div.appendChild(btn);
   });
+
   categoryContainer.appendChild(div);
 });
 
@@ -239,7 +263,12 @@ function startQuestion(cat, label, time) {
   timerDisplay.classList.remove("hidden");
 
   selectedButton.classList.add("active-q");
+
   runConfetti();
+
+  // 🔧 FIX: timer reset
+  timerDisplay.innerText = `${Math.floor(time / 60)}:00`;
+
   startTimer(time);
 }
 
@@ -251,9 +280,15 @@ function revealAnswer() {
 
 showAnswerBtn.onclick = revealAnswer;
 
+/* =========================
+   🔧 FIX: CLOSE BOX FULL RESET
+========================= */
 closeBoxBtn.onclick = () => {
   questionBox.classList.add("hidden");
   timerDisplay.classList.add("hidden");
+
+  stopTimerSounds(); // 👈 ən vacib fix
+
   if (selectedButton) {
     selectedButton.style.visibility = "hidden";
     selectedButton.classList.add("done");
@@ -261,7 +296,8 @@ closeBoxBtn.onclick = () => {
 };
 
 function startTimer(duration) {
-  clearInterval(timerInterval);
+  stopTimerSounds(); // 🔥 double safety (overlap olmaması üçün)
+
   let time = duration;
 
   audioTicker1.currentTime = 0;
@@ -271,6 +307,7 @@ function startTimer(duration) {
   timerInterval = setInterval(() => {
     const min = Math.floor(time / 60);
     const sec = time % 60;
+
     timerDisplay.innerText = `${min}:${sec < 10 ? "0" : ""}${sec}`;
 
     if (time === 10) {
@@ -280,10 +317,7 @@ function startTimer(duration) {
     }
 
     if (time <= 0) {
-      clearInterval(timerInterval);
-
-      audioTicker1.pause();
-      audioTicker2.pause();
+      stopTimerSounds();
 
       timerDisplay.innerText = "0:00";
 
