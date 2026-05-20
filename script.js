@@ -95,7 +95,7 @@ sayı ən azı neçə ola bilər?
         "Yanma üçün oksigen lazımdır. Şüşə qabın altında oksigen tədricən azalır və karbon qazı artır. Oksigen çatmadığı üçün şam sönür.",
     },
     "6 bal": {
-      sual: `3.	Bir şagird eyni kütləyə malik iki kağız parçasını eyni hündürlükdən aşağı buraxır. Kağızlardan biri tam açıq vəziyyətdədir, digəri isə kiçik top formasında bükülüb. Təcrübə əvvəlcə havada, sonra isə havası boşaldılmış xüsusi bir şüşə qabda təkrarlanır. Müşahidə olunur ki, açıq havada bükülmüş kağız daha tez yerə düşür, lakin vakuum şəraitində hər iki kağız eyni anda yerə çatır. Bu fərqin səbəbini izah edin. `,
+      sual: `Bir şagird eyni kütləyə malik iki kağız parçasını eyni hündürlükdən aşağı buraxır. Kağızlardan biri tam açıq vəziyyətdədir, digəri isə kiçik top formasında bükülüb. Təcrübə əvvəlcə havada, sonra isə havası boşaldılmış xüsusi bir şüşə qabda təkrarlanır. Müşahidə olunur ki, açıq havada bükülmüş kağız daha tez yerə düşür, lakin vakuum şəraitində hər iki kağız eyni anda yerə çatır. Bu fərqin səbəbini izah edin. `,
       cavab:
         "Havada açıq vəziyyətdə olan kağızın səth sahəsi böyük olduğuna görə ona təsir edən hava müqaviməti daha çox olur. Bu müqavimət kağızın düşmə sürətini azaldır. Bükülmüş kağızın isə səthi kiçik olduğuna görə hava müqaviməti zəifləyir və o, daha tez yerə düşür. Vakuum mühitində hava olmadığı üçün hava müqaviməti yaranmır. Bu halda hər iki kağıza yalnız cazibə qüvvəsi təsir edir. Kütlələri eyni olduğuna görə onlar eyni sürətlənmə ilə hərəkət edir və yerə eyni anda çatırlar. ",
     },
