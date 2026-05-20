@@ -111,16 +111,18 @@ sayı ən azı neçə ola bilər?
       cavab: "Bakı",
     },
     "4 bal": {
-      sual: `Azərbaycanın orta əsr memarlıq abidələrindən biri olan bu körpü Araz çayı üzərində yerləşir və tarix boyu mühüm ticarət-karvan yolları üzərində strateji əhəmiyyət daşıyıb. Körpünün adı Azərbaycan ədəbiyyatında da əks olunmuş, eyni adlı məşhur roman yazılmışdır. Söhbət hansı tarixi körpüdən gedir? `,
-      cavab: "Xudafərin körpüsü",
+      sual: ` Azərbaycan xalqının çoxəsrlik tarixi boyu istər folklar nümunələrində istərsə də yazılı ədəbiyyatda filmlərimizdə haqsızlıq etmə və haqsızlığa məruz qalmamaq önəmli bir detal kimi işlənilmişdir. Üzeyir bəy Hacıbəyovun sonrada filmi çəkilən bu əsərində də əlavə rol ifaçısı dəfələrlə öz haqqını tələb edirdi. Söhbət hansı filmdə və hansı obrazdan gedir? `,
+      cavab: "O olmasın bu olsun bir abbasını tələb edən hambal",
     },
     "5 bal": {
       sual: `“Qafqaz Səfəri”, “Üç muşketyor”, “Qraf Monte Kristo” kimi əsərlərin müəllifi olan bu məşhur fransız yazıçısı xatirələrində Azərbaycan dilinin əhəmiyyətini Avropada fransız dilinə bənzətmiş və bu dilin geniş coğrafiyada anlaşıldığını vurğulamışdır. Söhbət hansı yazıçıdan gedir?`,
       cavab: "Aleksandr Düma",
     },
     "6 bal": {
-      sual: `Müzəffər Ali Baş Komandan, cənab Prezidentimiz İlham Əliyev çıxışlarının birində “Bu janr həm ədəbiyyatdır, həm musiqidir, həm də Azərbaycan dilinin saflığını qoruyan sənətdir” deyərək mədəniyyət və dilin vəhdətini vurğulamışdır. Söhbət hansı musiqi janrından gedir? `,
-      cavab: "Muğam ",
+      sual: `Bu heykəlin açılışı zamanı Müzəffər Ali Baş komandan cənab prezident İlham Əliyevlə xalq aryisti Rasim Balayev arasında maraqlı dialoq keçmişdir."
+-sən canlı ....dəsən də heykəl necə olub? 
+özüm gəlib hər gün səhərdən axşama kimi burda dayanmağa hazır idim. Söhbət hansı heykəlin açılışından gedir. `,
+      cavab: "Nəsimi ",
     },
     "7 bal": {
       sual: `100 məşhur azərbaycanlıdan biri olan bu şəxs ana dilinin əhəmiyyətindən bəhs edərkən dəfələrlə “xalqın dili onun ruhudur və xalqın ruhu onun dilidir” (Vilhelm fon Humboldt) fikrinə əsaslanmış, dilin xalqın ruhu olduğunu dəfələrlə vurğulamış, ana dilimizin qorunub və inkişaf etdirilməsini onun vətəndaşlıq borcu hesab etmiş, onu ulu babalardan qalan milli sərvət adlandırmışdır. Bu şəxs kimidir?`,
