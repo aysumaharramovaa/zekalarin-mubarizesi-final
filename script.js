@@ -140,8 +140,8 @@ sayı ən azı neçə ola bilər?
       cavab: "Bəxtiyar Vahabzadə — “Gülüstan” poeması 1959-cu il",
     },
     "5 bal": {
-      sual: `1322-ci ildə Bərdədə inşa edilən və Naxçıvan memarlıq məktəbinin ən parlaq nümunələrindən biri hesab edilən bu memarlıq abidəsi memar Əhməd Naxçıvani tərəfindən inşa edilmişdir. Memarlıq xüsusiyyətlərinə görə Qarabağlar türbəsinə ən çox bənzəyən abidə hesab edilir. Söhbət hansı abidədən gedir? `,
-      cavab: "Bərdə türbəsi, Allah-Allah türbəsi",
+      sual: `Rus qoşunları tərəfindən ailəsinin 17 üzvü ilə birlikdə qətlə yetirilən bu Azərbaycan xanı eyni zamanda məşhur qadın şairələrdən birinin babası idi. Söhbət hansı tarixi şəxsiyyətdən gedir?`,
+      cavab: " İbrahimxəlil xan",
     },
     "6 bal": {
       sual: `İctimai xadim və məşhur Azərbaycan şairinə həsr olunan əsərdə deyilir:
