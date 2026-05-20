@@ -144,11 +144,9 @@ sayı ən azı neçə ola bilər?
       cavab: " İbrahimxəlil xan",
     },
     "6 bal": {
-      sual: `İctimai xadim və məşhur Azərbaycan şairinə həsr olunan əsərdə deyilir:
-“Fransızların məşhur ədibi Aleksandr Düma bizə qonaq gələndə Azərbaycan dilinin musiqiliyinə heyran olduğunu söyləyirdi. Fəqət hamıdan qabaq biz öz dilimizin qiymətini bilməliyik, ağalar. Nə qədər ki Azərbaycan xalqı yaşayır, Azərbaycan dili də yaşayacaqdır. Mən Azərbaycan balalarının Homeri, Danteni, Şekspiri, Höteni Puşkini öz doğma ana dillərində oxuyacaqları günü görmək istəyirəm.”
-Söhbət hansı əsərdən gedir və bu əsər kim tərəfindən qələmə alınaraq nə vaxt nəşr olunmuşdur?
+      sual: `I Aleksandr tərəfindən Vyana Konqresindən az sonra Cənubi Qafqaza köçürülən bu xalqın nümayəndələri Azərbaycanda iki böyük koloniya yaratmışdılar. Onlar xüsusilə kənd təsərrüfatının və üzümçülüyün inkişafında mühüm rol oynamışdılar. Söhbət hansı xalqdan gedir?
 `,
-      cavab: "Xurşidbanu Natəvan əsəri. İlyas Əfəndiyev. 1985-ci il",
+      cavab: "Almanlar ",
     },
 
     "7 bal": {
