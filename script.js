@@ -100,7 +100,7 @@ sayı ən azı neçə ola bilər?
         "Havada açıq vəziyyətdə olan kağızın səth sahəsi böyük olduğuna görə ona təsir edən hava müqaviməti daha çox olur. Bu müqavimət kağızın düşmə sürətini azaldır. Bükülmüş kağızın isə səthi kiçik olduğuna görə hava müqaviməti zəifləyir və o, daha tez yerə düşür. Vakuum mühitində hava olmadığı üçün hava müqaviməti yaranmır. Bu halda hər iki kağıza yalnız cazibə qüvvəsi təsir edir. Kütlələri eyni olduğuna görə onlar eyni sürətlənmə ilə hərəkət edir və yerə eyni anda çatırlar. ",
     },
     "7 bal": {
-      sual: `5.	Bir şagird eyni həcmə malik iki cismi, dəmir və taxta kubu suya salır. Dəmir kub batır, taxta kub isə suyun üzündə qalır. Halbuki hər ikisinə eyni ölçüdə Arximed qüvvəsi təsir edir. Bu vəziyyəti nəzərə alaraq izah edin: niyə eyni həcmli cisimlərdən biri batır, digəri isə batmır? `,
+      sual: `Bir şagird eyni həcmə malik iki cismi, dəmir və taxta kubu suya salır. Dəmir kub batır, taxta kub isə suyun üzündə qalır. Halbuki hər ikisinə eyni ölçüdə Arximed qüvvəsi təsir edir. Bu vəziyyəti nəzərə alaraq izah edin: niyə eyni həcmli cisimlərdən biri batır, digəri isə batmır? `,
       cavab:
         "Cismin batıb-batmaması onun çəkisi ilə Arximed qüvvəsinin müqayisəsindən asılıdır. Dəmirin sıxlığı sudan böyük olduğu üçün onun çəkisi Arximed qüvvəsindən çox olur və batır. Taxtanın sıxlığı isə sudan kiçikdir, ona görə Arximed qüvvəsi onun çəkisini tarazlayır və cisim suyun üzündə qalır",
     },
