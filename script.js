@@ -125,8 +125,8 @@ sayı ən azı neçə ola bilər?
       cavab: "Nəsimi ",
     },
     "7 bal": {
-      sual: `100 məşhur azərbaycanlıdan biri olan bu şəxs ana dilinin əhəmiyyətindən bəhs edərkən dəfələrlə “xalqın dili onun ruhudur və xalqın ruhu onun dilidir” (Vilhelm fon Humboldt) fikrinə əsaslanmış, dilin xalqın ruhu olduğunu dəfələrlə vurğulamış, ana dilimizin qorunub və inkişaf etdirilməsini onun vətəndaşlıq borcu hesab etmiş, onu ulu babalardan qalan milli sərvət adlandırmışdır. Bu şəxs kimidir?`,
-      cavab: "Ümumilli Lider Heydər Əliyev",
+      sual: `Bunu bir rəssamlıq nümunəsi də qəbul etmək olar. Bəzi tədqiqaçlara görə burda rənglər bir biri tarazlayır hər hansı bir rəngin ifadə etdiyi mənanı digərlərindən daha çox mənimsəməyə başqa rənglər icazə vermir və orda təsvir olunan bütün rənglər bərabər ölçüdə təsvir olunub. Söhbət nədən gedir?`,
+      cavab: "Azərbaycan bayrağı tarixi milli ənənələrə söykənərək müasirləşməyi tərənnüm etdirir.",
     },
   },
   "HUMANİTAR ELMLƏR": {
