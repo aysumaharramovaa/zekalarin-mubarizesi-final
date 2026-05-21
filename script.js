@@ -10,11 +10,11 @@ const categories = {
   },
   "TƏBİƏT ELMLƏRİ": {
     questions: {
-      "3 bal": 120,
-      "4 bal": 120,
-      "5 bal": 120,
-      "6 bal": 120,
-      "7 bal": 120,
+      "3 bal": 60,
+      "4 bal": 60,
+      "5 bal": 60,
+      "6 bal": 60,
+      "7 bal": 60,
     },
   },
   "HUMANİTAR ELMLƏR": {
